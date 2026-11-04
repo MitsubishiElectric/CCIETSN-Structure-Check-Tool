@@ -1,0 +1,1963 @@
+{
+  "version": 1,
+  "generatedAt": "2025-12-24T00:00:00Z",
+  "masterDevice": "RJ71GN11-T2",
+  "classification": "B_ONLY",
+  "tables": {
+    "1G": {
+      "unicast": {
+        "units-only": {
+          "masterSpeed": "1G",
+          "mode": "unicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                },
+                {
+                  "type": "masterPortConstraint",
+                  "description": "マスタのファームウェアバージョンが11以下の場合、P1またはP2のいずれか一方のみ使用できます。",
+                  "check": {
+                    "maxFirmwareVersion": 11
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                },
+                {
+                  "type": "masterPortConstraint",
+                  "description": "マスタのファームウェアバージョンが11以下の場合、P1またはP2のいずれか一方のみ使用できます。",
+                  "check": {
+                    "maxFirmwareVersion": 11
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                },
+                {
+                  "type": "masterPortConstraint",
+                  "description": "マスタのファームウェアバージョンが11以下の場合、P1またはP2のいずれか一方のみ使用できます。",
+                  "check": {
+                    "maxFirmwareVersion": 11
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                },
+                {
+                  "type": "masterPortConstraint",
+                  "description": "マスタのファームウェアバージョンが11以下の場合、P1またはP2のいずれか一方のみ使用できます。",
+                  "check": {
+                    "maxFirmwareVersion": 11
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "masterPortConstraint",
+                  "description": "マスタのファームウェアバージョンが11以下の場合、P1またはP2のいずれか一方のみ使用できます。",
+                  "check": {
+                    "maxFirmwareVersion": 11
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "masterPortConstraint",
+                  "description": "マスタのファームウェアバージョンが11以下の場合、P1またはP2のいずれか一方のみ使用できます。",
+                  "check": {
+                    "maxFirmwareVersion": 11
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "masterPortConstraint",
+                  "description": "マスタのファームウェアバージョンが11以下の場合、P1またはP2のいずれか一方のみ使用できます。",
+                  "check": {
+                    "maxFirmwareVersion": 11
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "masterPortConstraint",
+                  "description": "マスタのファームウェアバージョンが11以下の場合、P1またはP2のいずれか一方のみ使用できます。",
+                  "check": {
+                    "maxFirmwareVersion": 11
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "multicast": {
+        "units-only": {
+          "masterSpeed": "1G",
+          "mode": "multicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                },
+                {
+                  "type": "masterPortConstraint",
+                  "description": "ファームウェアバージョンが13以前のマスタ局の場合，P1またはP2のどちらか一方のみ使用できます。",
+                  "check": {
+                    "maxFirmwareVersion": 13
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                },
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタに対応した機器を使用してください。",
+                  "check": {
+                    "parameter": "supportsMulticastFilter",
+                    "footnote": "*6"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                },
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタに対応した機器を使用してください。",
+                  "check": {
+                    "parameter": "supportsMulticastFilter",
+                    "footnote": "*6"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*6"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*6"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*6"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*6"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*6"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "ethernetDataWarning",
+                  "description": "ファームウェアバージョンが\"13\"以前のマスタ局にEthernet機器を接続した場合，Ethernet機器にサイクリックデータが送信されるため，Ethernet機器によっては通信できないことがあります",
+                  "check": {
+                    "maxFirmwareVersion": 13
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "masterPortConstraint",
+                  "description": "ファームウェアバージョンが13以前のマスタ局の場合，P1またはP2のどちらか一方のみ使用できます。",
+                  "check": {
+                    "maxFirmwareVersion": 13
+                  }
+                },
+                {
+                  "type": "ethernetDataWarning",
+                  "description": "ファームウェアバージョンが\"13\"以前のマスタ局にEthernet機器を接続した場合，Ethernet機器にサイクリックデータが送信されるため，Ethernet機器によっては通信できないことがあります",
+                  "check": {
+                    "maxFirmwareVersion": 13
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "1G-ba": {
+      "unicast": {
+        "units-only": {
+          "masterSpeed": "1G",
+          "mode": "unicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-A-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-A-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "remote-A-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-A-100M",
+              "to": "remote-A-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "multicast": {
+        "units-only": {
+          "masterSpeed": "1G",
+          "mode": "multicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                },
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタに対応した機器を使用してください。",
+                  "check": {
+                    "parameter": "supportsMulticastFilter",
+                    "footnote": "*4"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                },
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタに対応した機器を使用してください。",
+                  "check": {
+                    "parameter": "supportsMulticastFilter",
+                    "footnote": "*4"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                },
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                },
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-A-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                },
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "remote-A-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-A-100M",
+              "to": "remote-A-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "100M": {
+      "unicast": {
+        "units-only": {
+          "masterSpeed": "100M",
+          "mode": "unicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": []
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": []
+            }
+          ]
+        }
+      },
+      "multicast": {
+        "units-only": {
+          "masterSpeed": "100M",
+          "mode": "multicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": []
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": []
+            },
+            {
+              "from": "local-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "ethernetDataWarning",
+                  "description": "ファームウェアバージョンが\"13\"以前のマスタ局にEthernet機器を接続した場合，Ethernet機器にサイクリックデータが送信されるため，Ethernet機器によっては通信できないことがあります",
+                  "check": {
+                    "maxFirmwareVersion": 13
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "100M-ba": {
+      "unicast": {
+        "units-only": {
+          "masterSpeed": "100M",
+          "mode": "unicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": []
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": []
+            }
+          ]
+        }
+      },
+      "multicast": {
+        "units-only": {
+          "masterSpeed": "100M",
+          "mode": "multicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": []
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": []
+            },
+            {
+              "from": "local-B-100M",
+              "to": "remote-A-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-A-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "multicastFilter",
+                  "description": "マルチキャストフィルタ対応が必要です",
+                  "check": {
+                    "footnote": "*3"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
