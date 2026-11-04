@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-11-02T09:22:09.702Z",
-  "timestamp": 1793611329705,
+  "generatedAt": "2026-11-04T05:31:10.596Z",
+  "timestamp": 1793770270596,
   "master": {
     "description": "マスタ局",
     "count": 25,
@@ -610,7 +610,7 @@
   },
   "localRemote": {
     "description": "ローカル・リモート局",
-    "count": 67,
+    "count": 65,
     "devices": [
       {
         "deviceId": "RJ71GN11-T2",
@@ -927,54 +927,6 @@
       {
         "deviceId": "MR-J5W3-G",
         "deviceName": "MR-J5W3-G",
-        "defaultPortCount": 2,
-        "minPorts": 2,
-        "maxPorts": 2,
-        "defaultPortType": "ethernet",
-        "supportsOpticalPorts": false,
-        "defaultClass": "B",
-        "deviceClass": "A,B",
-        "speed": "1G",
-        "speedOptions": [
-          "100M",
-          "1G"
-        ],
-        "supportsMulticastFilter": true,
-        "isRingCapable": false,
-        "firmwareVersion": "",
-        "protocolVersion": 2,
-        "cycleSetting": "BASIC",
-        "cyclicDataBytes": 40,
-        "category": "汎用ACサーボ",
-        "notes": "汎用ACサーボ"
-      },
-      {
-        "deviceId": "MR-JET-G",
-        "deviceName": "MR-JET-G",
-        "defaultPortCount": 2,
-        "minPorts": 2,
-        "maxPorts": 2,
-        "defaultPortType": "ethernet",
-        "supportsOpticalPorts": false,
-        "defaultClass": "B",
-        "deviceClass": "A,B",
-        "speed": "1G",
-        "speedOptions": [
-          "100M",
-          "1G"
-        ],
-        "supportsMulticastFilter": true,
-        "isRingCapable": true,
-        "firmwareVersion": "",
-        "protocolVersion": 2,
-        "cycleSetting": "BASIC",
-        "cyclicDataBytes": 40,
-        "category": "汎用ACサーボ",
-        "notes": "汎用ACサーボ"
-      },
-      {
-        "deviceId": "MR-JET-G-HS",
-        "deviceName": "MR-JET-G-HS",
         "defaultPortCount": 2,
         "minPorts": 2,
         "maxPorts": 2,
@@ -2314,7 +2266,7 @@
     ]
   },
   "summary": {
-    "totalDevices": 96,
+    "totalDevices": 94,
     "categorizedBy": "CSP DeviceTypeDetail with fallback to manual entry"
   }
 }
