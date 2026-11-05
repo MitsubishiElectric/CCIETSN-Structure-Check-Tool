@@ -1,0 +1,197 @@
+{
+  "nodes": [
+    {
+      "id": "KoDAPf",
+      "data": {
+        "label": "MXR300-16",
+        "modelName": "MXR300-16",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./devices/MXR300-16.bmp",
+        "deviceSpeedOptions": [
+          "100M",
+          "1G"
+        ],
+        "stationType": "master",
+        "deviceTypeDetailNormalized": "マスタ局専用ユニット",
+        "isMaster": true,
+        "stationNumber": 0,
+        "portCount": 2,
+        "maxStations": 254,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": true
+      },
+      "position": {
+        "x": 171.5,
+        "y": 299
+      },
+      "type": "deviceClass",
+      "width": 148,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 171.5,
+        "y": 299
+      },
+      "dragging": false
+    },
+    {
+      "id": "qhNj85",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 1,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 363.3896035108958,
+        "y": 315.83542675544794
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 363.3896035108958,
+        "y": 315.83542675544794
+      },
+      "dragging": false
+    },
+    {
+      "id": "UnfsEk",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 2,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 559.3571428571429,
+        "y": 365.72351694915255
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 559.3571428571429,
+        "y": 365.72351694915255
+      },
+      "dragging": false
+    },
+    {
+      "id": "LQd4ES",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "A",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 3,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 741.6032838983051,
+        "y": 419.0528147699758
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "SiVD2kDK",
+      "source": "LQd4ES",
+      "target": "UnfsEk",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "H_yt4tAU",
+      "source": "UnfsEk",
+      "target": "qhNj85",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "BiTS3MyH",
+      "source": "qhNj85",
+      "target": "KoDAPf",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    }
+  ],
+  "communicationMode": "unicast",
+  "version": 1,
+  "updatedAt": "2026-03-06T04:12:47.920Z"
+}

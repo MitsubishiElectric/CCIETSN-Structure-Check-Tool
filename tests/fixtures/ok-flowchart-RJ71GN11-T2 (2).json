@@ -1,0 +1,206 @@
+{
+  "nodes": [
+    {
+      "id": "SqO4RO",
+      "data": {
+        "label": "RJ71GN11-T2",
+        "modelName": "RJ71GN11-T2",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0000_RJ71GN11-T2_1_ja.png",
+        "stationType": "master",
+        "deviceTypeDetailNormalized": "マスタ・ローカルユニット",
+        "isMaster": true,
+        "stationNumber": 0,
+        "portCount": 2,
+        "maxStations": 121,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": "30",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": true
+      },
+      "position": {
+        "x": 523,
+        "y": 114
+      },
+      "type": "deviceClass",
+      "width": 161,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 523,
+        "y": 114
+      },
+      "dragging": false
+    },
+    {
+      "id": "RAgN__",
+      "data": {
+        "label": "RJ71GN11-T2",
+        "modelName": "RJ71GN11-T2",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0000_RJ71GN11-T2_1_ja.png",
+        "stationType": "local",
+        "deviceTypeDetailNormalized": "マスタ・ローカルユニット",
+        "isMaster": false,
+        "stationNumber": 1,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": "30",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": true,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 36
+      },
+      "position": {
+        "x": 535,
+        "y": 249.5
+      },
+      "type": "deviceClass",
+      "width": 155,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 535,
+        "y": 249.5
+      },
+      "dragging": false
+    },
+    {
+      "id": "nle3RX",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 2,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 862.75,
+        "y": 117
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 862.75,
+        "y": 117
+      },
+      "dragging": false
+    },
+    {
+      "id": "7Vf-Na",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 3,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 859.875,
+        "y": 249.25
+      },
+      "type": "deviceClass",
+      "width": 131,
+      "height": 72,
+      "selected": true,
+      "positionAbsolute": {
+        "x": 859.875,
+        "y": 249.25
+      },
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "6C7IH1mv",
+      "source": "SqO4RO",
+      "target": "nle3RX",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "O92QjiLl",
+      "source": "nle3RX",
+      "target": "7Vf-Na",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "beQYbU8l",
+      "source": "7Vf-Na",
+      "target": "RAgN__",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port2_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "SouD4ZET",
+      "source": "RAgN__",
+      "target": "SqO4RO",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port2_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    }
+  ],
+  "communicationMode": "unicast",
+  "version": 1,
+  "updatedAt": "2026-01-28T08:19:33.053Z"
+}

@@ -1,0 +1,233 @@
+{
+  "nodes": [
+    {
+      "id": "RVFEZT",
+      "data": {
+        "label": "RJ71GN11-T2",
+        "modelName": "RJ71GN11-T2",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0000_RJ71GN11-T2_1_ja.png",
+        "stationType": "master",
+        "deviceTypeDetailNormalized": "マスタ・ローカルユニット",
+        "isMaster": true,
+        "stationNumber": 0,
+        "portCount": 2,
+        "maxStations": 121,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": "30",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": true
+      },
+      "position": {
+        "x": 226,
+        "y": 131
+      },
+      "type": "deviceClass",
+      "width": 161,
+      "height": 72,
+      "selected": true,
+      "positionAbsolute": {
+        "x": 226,
+        "y": 131
+      },
+      "dragging": false
+    },
+    {
+      "id": "mozYbD",
+      "data": {
+        "label": "RJ71GN11-T2",
+        "modelName": "RJ71GN11-T2",
+        "deviceClass": "B",
+        "speed": "100M",
+        "imageUrl": "./csp/img/0x0000_RJ71GN11-T2_1_ja.png",
+        "stationType": "local",
+        "deviceTypeDetailNormalized": "マスタ・ローカルユニット",
+        "isMaster": false,
+        "stationNumber": 1,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": "30",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": true,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 36
+      },
+      "position": {
+        "x": 227.5,
+        "y": 272.5
+      },
+      "type": "deviceClass",
+      "width": 155,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 227.5,
+        "y": 272.5
+      },
+      "dragging": false
+    },
+    {
+      "id": "Apa5ap",
+      "data": {
+        "label": "産業用スイッチ（Class B対応）",
+        "modelName": "産業用スイッチ（Class B対応）",
+        "deviceClass": "B",
+        "imageUrl": "./devices/switch-classB.png",
+        "stationType": "switch-classB",
+        "deviceTypeDetailNormalized": "switch-classB",
+        "isMaster": false,
+        "portCount": 4,
+        "switchType": "ClassB",
+        "portType": "ethernet",
+        "supportsOpticalPorts": true,
+        "defaultPortType": "ethernet"
+      },
+      "position": {
+        "x": 479.75,
+        "y": 121.25
+      },
+      "type": "deviceClass",
+      "width": 200,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 479.75,
+        "y": 121.25
+      },
+      "dragging": false
+    },
+    {
+      "id": "rtu6TM",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "100M",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 2,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 763.625,
+        "y": 112.875
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 763.625,
+        "y": 112.875
+      },
+      "dragging": false
+    },
+    {
+      "id": "mkfbTd",
+      "data": {
+        "label": "RJ71GN11-T2",
+        "modelName": "RJ71GN11-T2",
+        "deviceClass": "B",
+        "speed": "100M",
+        "imageUrl": "./csp/img/0x0000_RJ71GN11-T2_1_ja.png",
+        "stationType": "local",
+        "deviceTypeDetailNormalized": "マスタ・ローカルユニット",
+        "isMaster": false,
+        "stationNumber": 3,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": "30",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": true,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 36
+      },
+      "position": {
+        "x": 751.0122957021791,
+        "y": 268.7402239709443
+      },
+      "type": "deviceClass",
+      "width": 155,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 751.0122957021791,
+        "y": 268.7402239709443
+      },
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "X7leoZdU",
+      "source": "mkfbTd",
+      "target": "Apa5ap",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port4_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "kZh-2JNS",
+      "source": "Apa5ap",
+      "target": "rtu6TM",
+      "sourceHandle": "port3_out",
+      "targetHandle": "port2_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "hiZAH_C9",
+      "source": "Apa5ap",
+      "target": "mozYbD",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port2_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "xdFgtRtd",
+      "source": "Apa5ap",
+      "target": "RVFEZT",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port2_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    }
+  ],
+  "communicationMode": "unicast",
+  "version": 1,
+  "updatedAt": "2026-01-28T08:24:59.394Z"
+}

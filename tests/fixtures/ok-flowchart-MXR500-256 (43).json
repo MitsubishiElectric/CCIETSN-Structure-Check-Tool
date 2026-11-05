@@ -1,0 +1,164 @@
+{
+  "nodes": [
+    {
+      "id": "5w1m9N",
+      "data": {
+        "label": "MXR500-256",
+        "modelName": "MXR500-256",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./devices/MXR500-256.bmp",
+        "deviceSpeedOptions": [
+          "100M",
+          "1G"
+        ],
+        "stationType": "master",
+        "deviceTypeDetailNormalized": "マスタ局専用ユニット",
+        "isMaster": true,
+        "stationNumber": 0,
+        "portCount": 2,
+        "maxStations": 254,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": true
+      },
+      "position": {
+        "x": 1375,
+        "y": 267
+      },
+      "type": "deviceClass",
+      "width": 148,
+      "height": 72,
+      "selected": false
+    },
+    {
+      "id": "cM1ivZ",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 1,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 1687,
+        "y": 298
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false
+    },
+    {
+      "id": "s29ite",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 2,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 1910.5,
+        "y": 307
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false
+    },
+    {
+      "id": "M8dqjo",
+      "data": {
+        "label": "Ethernet機器",
+        "modelName": "Ethernet機器",
+        "speed": "1G",
+        "imageUrl": "./devices/ethernet-device.png",
+        "stationType": "ethernet-device",
+        "deviceTypeDetailNormalized": "ethernet-device",
+        "isMaster": false,
+        "portCount": 1,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet"
+      },
+      "position": {
+        "x": 2075.75,
+        "y": 353
+      },
+      "type": "deviceClass",
+      "width": 148,
+      "height": 72,
+      "selected": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "hpJmZAhA",
+      "source": "5w1m9N",
+      "target": "cM1ivZ",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port1_in",
+      "type": "default"
+    },
+    {
+      "id": "XLdAi1h-",
+      "source": "cM1ivZ",
+      "target": "s29ite",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port1_in",
+      "type": "default"
+    },
+    {
+      "id": "Q8Lj1x9p",
+      "source": "s29ite",
+      "target": "M8dqjo",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    }
+  ],
+  "communicationMode": "unicast",
+  "version": 1,
+  "updatedAt": "2026-03-06T01:38:00.601Z"
+}

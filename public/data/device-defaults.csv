@@ -1,0 +1,109 @@
+﻿# === Master Devices ===,,,,,,,,,,,,,,,,,,
+# マスタ局として使用可能な機器,,,,,,,,,,,,,,,,,,
+# deviceId,deviceName,category,defaultClass,deviceClass,maxStations,defaultPortCount,minPorts,maxPorts,defaultPortType,supportsOpticalPorts,speed,speedOptions,supportsMulticastFilter,isRingCapable,firmwareVersion,protocolVersion,hardwareVersion,notes
+RJ71GN11-T2,RJ71GN11-T2,マスタ・ローカルユニット,B,B,121,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,30,2,,マスタ・ローカルユニット
+RJ71GN11-SX,RJ71GN11-SX,マスタ・ローカルユニット,B,B,121,2,2,2,optical,TRUE,1G,"100M,1G",TRUE,TRUE,,2,,マスタ・ローカルユニット（光ケーブル）
+RJ71GN11-EIP(T+E),RJ71GN11-EIP(T+E),マスタ・ローカルユニット,B,B,121,1,1,1,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,,マスタ・ローカルユニット
+FX5-CCLGN-MS,FX5-CCLGN-MS,マスタ・ローカルユニット,B,B,61,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,,マスタ・ローカルユニット
+NZ81GN11-T2,NZ81GN11-T2,ネットワークインタフェースボード,B,B,121,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,,ネットワークインターフェースボード
+NZ81GN11-SX,NZ81GN11-SX,ネットワークインタフェースボード,B,B,121,2,2,2,optical,TRUE,1G,"100M,1G",TRUE,TRUE,,2,,ネットワークインターフェースボード（光ケーブル）
+MXR300-16,MXR300-16,MXコントローラ,B,B,254,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,4,2,,MXコントローラ MX-Rモデル
+MXR300-32,MXR300-32,MXコントローラ,B,B,254,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,4,2,,MXコントローラ MX-Rモデル
+MXR300-64,MXR300-64,MXコントローラ,B,B,254,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,4,2,,MXコントローラ MX-Rモデル
+MXR500-128,MXR500-128,MXコントローラ,B,B,254,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,4,2,,MXコントローラ MX-Rモデル
+MXR500-256,MXR500-256,MXコントローラ,B,B,254,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,4,2,,MXコントローラ MX-Rモデル
+MXF100-8-N32,MXF100-8-N32,MXコントローラ,B,B,39,2,1,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,,MXコントローラ MX-Fモデル
+MXF100-8-P32,MXF100-8-P32,MXコントローラ,B,B,39,2,1,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,,MXコントローラ MX-Fモデル
+MXF100-16-N32,MXF100-16-N32,MXコントローラ,B,B,47,2,1,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,,MXコントローラ MX-Fモデル
+MXF100-16-P32,MXF100-16-P32,MXコントローラ,B,B,47,2,1,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,,MXコントローラ MX-Fモデル
+RD78G4,RD78G4,モーションユニット,B,B,121,1,1,1,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,,モーションユニット
+RD78G8,RD78G8,モーションユニット,B,B,121,1,1,1,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,,モーションユニット
+RD78G16,RD78G16,モーションユニット,B,B,121,1,1,1,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,,モーションユニット
+RD78G32,RD78G32,モーションユニット,B,B,121,1,1,1,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,,モーションユニット
+RD78G64,RD78G64,モーションユニット,B,B,121,1,1,1,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,,モーションユニット
+RD78GHV,RD78GHV,モーションユニット,B,B,121,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,,モーションユニット（ハイパフォーマンス）
+RD78GHW,RD78GHW,モーションユニット,B,B,121,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,,モーションユニット（ハイパフォーマンス）
+FX5-40SSC-G,FX5-40SSC-G,モーションユニット,B,B,21,1,1,1,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,,シンプルモーションユニット
+FX5-80SSC-G,FX5-80SSC-G,モーションユニット,B,B,25,1,1,1,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,,シンプルモーションユニット
+generic-master,汎用マスタ局,汎用機器,B,B,121,2,1,2,ethernet,TRUE,1G,"100M,1G",TRUE,TRUE,,2,,ユーザー定義汎用マスタ
+,,,,,,,,,,,,,,,,,,
+# === Local/Remote Devices ===,,,,,,,,,,,,,,,,,,
+# ローカル局・リモート局として使用可能な機器,,,,,,,,,,,,,,,,,,
+# deviceId,deviceName,category,defaultClass,deviceClass,cyclicDataBytes,defaultPortCount,minPorts,maxPorts,defaultPortType,supportsOpticalPorts,speed,speedOptions,supportsMulticastFilter,isRingCapable,firmwareVersion,protocolVersion,cycleSetting,notes
+RJ71GN11-T2,RJ71GN11-T2,マスタ・ローカルユニット,B,B,36,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,30,2,BASIC,マスタ・ローカルユニット
+RJ71GN11-SX,RJ71GN11-SX,マスタ・ローカルユニット,B,B,36,2,2,2,optical,TRUE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,マスタ・ローカルユニット（光ケーブル）
+RJ71GN11-EIP(T+E),RJ71GN11-EIP(T+E),マスタ・ローカルユニット,B,B,36,1,1,1,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,マスタ・ローカルユニット
+FX5-CCLGN-MS,FX5-CCLGN-MS,マスタ・ローカルユニット,B,B,36,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,マスタ・ローカルユニット
+NZ81GN11-T2,NZ81GN11-T2,ネットワークインタフェースボード,B,B,36,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,ネットワークインターフェースボード
+NZ81GN11-SX,NZ81GN11-SX,ネットワークインタフェースボード,B,B,36,2,2,2,optical,TRUE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,ネットワークインターフェースボード（光ケーブル）
+MR-J5-G,MR-J5-G,汎用ACサーボ,B,"A,B",40,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,BASIC,汎用ACサーボ
+MR-J5-G-LL,MR-J5-G-LL,汎用ACサーボ,B,"A,B",48,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,汎用ACサーボ
+MR-J5-G-RJ,MR-J5-G-RJ,汎用ACサーボ,B,"A,B",40,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,BASIC,汎用ACサーボ
+MR-J5D1-G,MR-J5D1-G,汎用ACサーボ,B,"A,B",40,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,BASIC,汎用ACサーボ
+MR-J5D2-G,MR-J5D2-G,汎用ACサーボ,B,"A,B",40,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,BASIC,汎用ACサーボ
+MR-J5D3-G,MR-J5D3-G,汎用ACサーボ,B,"A,B",40,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,BASIC,汎用ACサーボ
+MR-J5W2-G,MR-J5W2-G,汎用ACサーボ,B,"A,B",40,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,BASIC,汎用ACサーボ
+MR-J5W3-G,MR-J5W3-G,汎用ACサーボ,B,"A,B",40,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,BASIC,汎用ACサーボ
+FR-A800-F(-G),FR-A800-F(-G),汎用インバータ,B,"A,B",264,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,汎用インバータ
+FR-A800-GN,FR-A800-GN,汎用インバータ,B,"A,B",264,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,汎用インバータ
+FR-E800-E,FR-E800-E,汎用インバータ,A,A,68,2,2,2,ethernet,FALSE,1G,"100M,1G",FALSE,FALSE,,2,BASIC,汎用インバータ
+FR-E800-SCE,FR-E800-SCE,汎用インバータ,A,A,68,2,2,2,ethernet,FALSE,1G,"100M,1G",FALSE,FALSE,,2,BASIC,汎用インバータ
+FR-F800-GN,FR-F800-GN,汎用インバータ,B,"A,B",264,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,汎用インバータ
+NZ2GN12A4-16D,NZ2GN12A4-16D,DC入力,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,DC入力
+NZ2GN12A4-16DE,NZ2GN12A4-16DE,DC入力,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,DC入力
+NZ2GN2B1-16D,NZ2GN2B1-16D,DC入力,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,DC入力
+NZ2GN2B1-32D,NZ2GN2B1-32D,DC入力,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,DC入力
+NZ2GN2S1-16D,NZ2GN2S1-16D,DC入力,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,DC入力
+NZ2GN2S1-32D,NZ2GN2S1-32D,DC入力,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,DC入力
+NZ2GNCE3-32D,NZ2GNCE3-32D,DC入力,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,DC入力
+NZ2GNCF1-32D,NZ2GNCF1-32D,DC入力,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,DC入力
+NZ2GNSS2-8D,NZ2GNSS2-8D,DC入力,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,DC入力
+NZ2GN12A2-16T,NZ2GN12A2-16T,トランジスタ出力,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,トランジスタ出力
+NZ2GN12A2-16TE,NZ2GN12A2-16TE,トランジスタ出力,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,トランジスタ出力
+NZ2GN2B1-16T,NZ2GN2B1-16T,トランジスタ出力,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,トランジスタ出力
+NZ2GN2B1-16TE,NZ2GN2B1-16TE,トランジスタ出力,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,トランジスタ出力
+NZ2GN2B1-32T,NZ2GN2B1-32T,トランジスタ出力,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,トランジスタ出力
+NZ2GN2B1-32TE,NZ2GN2B1-32TE,トランジスタ出力,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,トランジスタ出力
+NZ2GN2S1-16T,NZ2GN2S1-16T,トランジスタ出力,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,トランジスタ出力
+NZ2GN2S1-16TE,NZ2GN2S1-16TE,トランジスタ出力,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,トランジスタ出力
+NZ2GN2S1-32T,NZ2GN2S1-32T,トランジスタ出力,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,トランジスタ出力
+NZ2GN2S1-32TE,NZ2GN2S1-32TE,トランジスタ出力,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,トランジスタ出力
+NZ2GNCF1-32T,NZ2GNCF1-32T,トランジスタ出力,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,トランジスタ出力
+NZ2GNSS2-8TE,NZ2GNSS2-8TE,トランジスタ出力,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,トランジスタ出力
+NZ2GN12A42-16DT,NZ2GN12A42-16DT,入出力混合,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,入出力混合
+NZ2GN12A42-16DTE,NZ2GN12A42-16DTE,入出力混合,B,"A,B",10,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,入出力混合
+NZ2GN2B1-32DT,NZ2GN2B1-32DT,入出力混合,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,入出力混合
+NZ2GN2B1-32DTE,NZ2GN2B1-32DTE,入出力混合,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,入出力混合
+NZ2GN2S1-32DT,NZ2GN2S1-32DT,入出力混合,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,入出力混合
+NZ2GN2S1-32DTE,NZ2GN2S1-32DTE,入出力混合,B,"A,B",12,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,入出力混合
+NZ2GN2B-60AD4,NZ2GN2B-60AD4,アナログ入力,B,"A,B",36,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,アナログ入力
+NZ2GN2S-60AD4,NZ2GN2S-60AD4,アナログ入力,B,"A,B",36,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,アナログ入力
+NZ2GN2B-60DA4,NZ2GN2B-60DA4,アナログ出力,B,"A,B",68,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,アナログ出力
+NZ2GN2S-60DA4,NZ2GN2S-60DA4,アナログ出力,B,"A,B",68,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,アナログ出力
+NZ2AW1GNAL,NZ2AW1GNAL,ブリッジユニット,B,"A,B",68,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,ブリッジユニット
+NZ2GN-GFB,NZ2GN-GFB,ブリッジユニット,B,"A,B",82,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,FALSE,,2,BASIC,ブリッジユニット
+NZ2GN2S-D41D01,NZ2GN2S-D41D01,FPGAユニット,B,"A,B",302,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,FPGAユニット
+NZ2GN2S-D41P01,NZ2GN2S-D41P01,FPGAユニット,B,"A,B",302,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,FPGAユニット
+NZ2GN2S-D41PD02,NZ2GN2S-D41PD02,FPGAユニット,B,"A,B",302,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,FPGAユニット
+EMU4-BD1A-MB,EMU4-BD1A-MB,エネルギー計測ユニット,A,A,72,1,1,1,ethernet,FALSE,1G,"100M,1G",FALSE,FALSE,,2,BASIC,エネルギー計測ユニット
+EMU4-BM1-MB,EMU4-BM1-MB,エネルギー計測ユニット,A,A,72,1,1,1,ethernet,FALSE,1G,"100M,1G",FALSE,FALSE,,2,BASIC,エネルギー計測ユニット
+EMU4-CNT-MB,EMU4-CNT-MB,エネルギー計測ユニット,A,A,72,1,1,1,ethernet,FALSE,1G,"100M,1G",FALSE,FALSE,,2,BASIC,エネルギー計測ユニット
+EMU4-FD1-MB,EMU4-FD1-MB,エネルギー計測ユニット,A,A,72,1,1,1,ethernet,FALSE,1G,"100M,1G",FALSE,FALSE,,2,BASIC,エネルギー計測ユニット
+EMU4-HD1A-MB,EMU4-HD1A-MB,エネルギー計測ユニット,A,A,72,1,1,1,ethernet,FALSE,1G,"100M,1G",FALSE,FALSE,,2,BASIC,エネルギー計測ユニット
+EMU4-HM1-MB,EMU4-HM1-MB,エネルギー計測ユニット,A,A,72,1,1,1,ethernet,FALSE,1G,"100M,1G",FALSE,FALSE,,2,BASIC,エネルギー計測ユニット
+EMU4-LG1-MB,EMU4-LG1-MB,エネルギー計測ユニット,A,A,72,1,1,1,ethernet,FALSE,1G,"100M,1G",FALSE,FALSE,,2,BASIC,エネルギー計測ユニット
+MTR-SCU-G,MTR-SCU-G,リニアトラック制御ユニット,B,B,40,2,2,2,ethernet,FALSE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,リニアートラック制御ユニット
+generic-local,汎用ローカル局,汎用機器,B,"A,B",256,2,1,2,ethernet,TRUE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,ユーザー定義汎用ローカル
+generic-remote,汎用リモート局,汎用機器,B,"A,B",256,2,1,2,ethernet,TRUE,1G,"100M,1G",TRUE,TRUE,,2,BASIC,ユーザー定義汎用リモート
+,,,,,,,,,,,,,,,,,,
+# === Switch Devices ===,,,,,,,,,,,,,,,,,,
+# スイッチとして使用可能な機器,,,,,,,,,,,,,,,,,,
+# deviceId,deviceName,category,defaultPortCount,minPorts,maxPorts,defaultPortType,supportsOpticalPorts,switchType,notes,,,,,,,,,
+switch-classB,産業用スイッチ(ClassB),ネットワーク機器,4,1,8,ethernet,TRUE,ClassB,Class B対応産業用スイッチ,,,,,,,,,
+switch-classA,産業用スイッチ(ClassA),ネットワーク機器,4,1,8,ethernet,TRUE,ClassA,Class A対応産業用スイッチ,,,,,,,,,
+switch-general,一般スイッチ,ネットワーク機器,4,1,8,ethernet,TRUE,General,汎用ネットワークスイッチ,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+# === Ethernet Devices ===,,,,,,,,,,,,,,,,,,
+# Ethernet機器（HMI/PC等）,,,,,,,,,,,,,,,,,,
+# deviceId,deviceName,category,defaultPortCount,minPorts,maxPorts,defaultPortType,supportsOpticalPorts,speed,speedOptions,notes,,,,,,,,
+ethernet-device,Ethernet機器,ネットワーク機器,1,1,1,ethernet,FALSE,1G,"100M,1G",汎用HMI/PC/スキャナ等,,,,,,,,

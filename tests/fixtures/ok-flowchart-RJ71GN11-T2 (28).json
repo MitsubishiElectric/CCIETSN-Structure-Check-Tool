@@ -1,0 +1,237 @@
+{
+  "nodes": [
+    {
+      "id": "Nchzxw",
+      "data": {
+        "label": "産業用スイッチ（Class B対応）",
+        "modelName": "産業用スイッチ（Class B対応）",
+        "deviceClass": "B",
+        "imageUrl": "./devices/switch-classB.png",
+        "stationType": "switch-classB",
+        "deviceTypeDetailNormalized": "switch-classB",
+        "isMaster": false,
+        "portCount": 4,
+        "switchType": "ClassB",
+        "portType": "ethernet",
+        "supportsOpticalPorts": true,
+        "defaultPortType": "ethernet",
+        "forbiddenPortsConfigured": [
+          "port2",
+          "port3"
+        ],
+        "opticalPortCount": 0,
+        "ethernetPortCount": 4
+      },
+      "position": {
+        "x": 1143,
+        "y": 270
+      },
+      "type": "deviceClass",
+      "width": 200,
+      "height": 72,
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "w4wvGD",
+      "data": {
+        "label": "RJ71GN11-T2",
+        "modelName": "RJ71GN11-T2",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0000_RJ71GN11-T2_1_ja.png",
+        "stationType": "master",
+        "deviceTypeDetailNormalized": "マスタ・ローカルユニット",
+        "isMaster": true,
+        "stationNumber": 0,
+        "portCount": 2,
+        "maxStations": 121,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": "30",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": true
+      },
+      "position": {
+        "x": 954.5,
+        "y": 222.5
+      },
+      "type": "deviceClass",
+      "width": 161,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 954.5,
+        "y": 222.5
+      },
+      "dragging": false
+    },
+    {
+      "id": "UqtLzl",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "A",
+        "speed": "100M",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 1,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": null,
+        "protocolVersion": "2.0",
+        "hardwareVersion": null,
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "LOW",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 996.5,
+        "y": 392.5
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 996.5,
+        "y": 392.5
+      },
+      "dragging": false
+    },
+    {
+      "id": "7JPdhu",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "A",
+        "speed": "100M",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 2,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": null,
+        "protocolVersion": "2.0",
+        "hardwareVersion": null,
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "LOW",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 1418.25,
+        "y": 243
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 1418.25,
+        "y": 243
+      },
+      "dragging": false
+    },
+    {
+      "id": "ZZk4Rm",
+      "data": {
+        "label": "RJ71GN11-T2",
+        "modelName": "RJ71GN11-T2",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0000_RJ71GN11-T2_1_ja.png",
+        "stationType": "local",
+        "deviceTypeDetailNormalized": "マスタ・ローカルユニット",
+        "isMaster": false,
+        "stationNumber": 3,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": "30",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": true,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 36
+      },
+      "position": {
+        "x": 1412.375,
+        "y": 379.25
+      },
+      "type": "deviceClass",
+      "width": 155,
+      "height": 72,
+      "selected": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "lBdC1Fmq",
+      "source": "w4wvGD",
+      "target": "Nchzxw",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "edABiBxG",
+      "source": "UqtLzl",
+      "target": "Nchzxw",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port2_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "XbnZJ4FT",
+      "source": "Nchzxw",
+      "target": "7JPdhu",
+      "sourceHandle": "port3_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "0ew1lVRN",
+      "source": "ZZk4Rm",
+      "target": "Nchzxw",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port4_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    }
+  ],
+  "communicationMode": "multicast",
+  "version": 1,
+  "updatedAt": "2026-01-30T06:44:02.940Z"
+}

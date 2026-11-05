@@ -1,0 +1,629 @@
+{
+  "nodes": [
+    {
+      "id": "LfyvSj",
+      "data": {
+        "label": "MXR300-32",
+        "modelName": "MXR300-32",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./devices/MXR300-32.bmp",
+        "deviceSpeedOptions": [
+          "100M",
+          "1G"
+        ],
+        "stationType": "master",
+        "deviceTypeDetailNormalized": "マスタ局専用ユニット",
+        "isMaster": true,
+        "stationNumber": 0,
+        "portCount": 2,
+        "maxStations": 254,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": true
+      },
+      "position": {
+        "x": 1373,
+        "y": 323
+      },
+      "type": "deviceClass",
+      "width": 148,
+      "height": 72,
+      "selected": false
+    },
+    {
+      "id": "g7x8oL",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 1,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 1538.1226694915254,
+        "y": 333.02848062953996
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 1538.1226694915254,
+        "y": 333.02848062953996
+      },
+      "dragging": false
+    },
+    {
+      "id": "I4V5e7",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 2,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 1695.295323849879,
+        "y": 345.3880296610169
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 1695.295323849879,
+        "y": 345.3880296610169
+      },
+      "dragging": false
+    },
+    {
+      "id": "n9gPGF",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 3,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 1875.885608353511,
+        "y": 361.53099273607745
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 1875.885608353511,
+        "y": 361.53099273607745
+      },
+      "dragging": false
+    },
+    {
+      "id": "Ygy5rG",
+      "data": {
+        "label": "産業用スイッチ（Class B対応）",
+        "modelName": "産業用スイッチ（Class B対応）",
+        "deviceClass": "B",
+        "imageUrl": "./devices/switch-classB.png",
+        "stationType": "switch-classB",
+        "deviceTypeDetailNormalized": "switch-classB",
+        "isMaster": false,
+        "portCount": 4,
+        "switchType": "ClassB",
+        "portType": "ethernet",
+        "supportsOpticalPorts": true,
+        "defaultPortType": "ethernet"
+      },
+      "position": {
+        "x": 2077.25,
+        "y": 292.6875
+      },
+      "type": "deviceClass",
+      "width": 200,
+      "height": 72,
+      "selected": false
+    },
+    {
+      "id": "geo-MJ",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "100M",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 4,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": null,
+        "protocolVersion": "2.0",
+        "hardwareVersion": null,
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "LOW",
+        "cyclicDataBytes": 400
+      },
+      "position": {
+        "x": 2259.8437348668276,
+        "y": 502.69827183837583
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 2259.8437348668276,
+        "y": 502.69827183837583
+      }
+    },
+    {
+      "id": "gVw2-a",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "100M",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 5,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": null,
+        "protocolVersion": "2.0",
+        "hardwareVersion": null,
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "LOW",
+        "cyclicDataBytes": 400
+      },
+      "position": {
+        "x": 2144.721481390962,
+        "y": 547.003779718545
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "CTNniI",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "100M",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 6,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": null,
+        "protocolVersion": "2.0",
+        "hardwareVersion": null,
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "LOW",
+        "cyclicDataBytes": 400
+      },
+      "position": {
+        "x": 2296.9135663664706,
+        "y": 615.4535434650709
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 2296.9135663664706,
+        "y": 615.4535434650709
+      },
+      "dragging": false
+    },
+    {
+      "id": "hEIcCU",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "1G",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 7,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "protocolVersion": "2.0",
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "BASIC",
+        "cyclicDataBytes": 40
+      },
+      "position": {
+        "x": 1425.5182069422501,
+        "y": 452.21152303872896
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 1425.5182069422501,
+        "y": 452.21152303872896
+      },
+      "dragging": false
+    },
+    {
+      "id": "9RRJUY",
+      "data": {
+        "label": "産業用スイッチ（Class B対応）",
+        "modelName": "産業用スイッチ（Class B対応）",
+        "deviceClass": "B",
+        "imageUrl": "./devices/switch-classB.png",
+        "stationType": "switch-classB",
+        "deviceTypeDetailNormalized": "switch-classB",
+        "isMaster": false,
+        "portCount": 4,
+        "switchType": "ClassB",
+        "portType": "ethernet",
+        "supportsOpticalPorts": true,
+        "defaultPortType": "ethernet"
+      },
+      "position": {
+        "x": 1404.4854298901353,
+        "y": 562.9841488465331
+      },
+      "type": "deviceClass",
+      "width": 200,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 1404.4854298901353,
+        "y": 562.9841488465331
+      },
+      "dragging": false
+    },
+    {
+      "id": "HqSwIz",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "100M",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 8,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": null,
+        "protocolVersion": "2.0",
+        "hardwareVersion": null,
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "LOW",
+        "cyclicDataBytes": 400
+      },
+      "position": {
+        "x": 1636.7940675576156,
+        "y": 611.439879954199
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 1636.7940675576156,
+        "y": 611.439879954199
+      }
+    },
+    {
+      "id": "Q8DMJO",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "100M",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 9,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": null,
+        "protocolVersion": "2.0",
+        "hardwareVersion": null,
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "LOW",
+        "cyclicDataBytes": 400
+      },
+      "position": {
+        "x": 1521.6718140817497,
+        "y": 655.7453878343682
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "dragging": false,
+      "positionAbsolute": {
+        "x": 1521.6718140817497,
+        "y": 655.7453878343682
+      }
+    },
+    {
+      "id": "Vg69JH",
+      "data": {
+        "label": "MR-J5-G",
+        "modelName": "MR-J5-G",
+        "deviceClass": "B",
+        "speed": "100M",
+        "imageUrl": "./csp/img/0x0002_MR-J5-G_1_ja.CSPP.png",
+        "deviceClassOptions": [
+          "A",
+          "B"
+        ],
+        "stationType": "remote",
+        "deviceTypeDetailNormalized": "汎用ACサーボ",
+        "isMaster": false,
+        "stationNumber": 10,
+        "portCount": 2,
+        "portType": "ethernet",
+        "supportsOpticalPorts": false,
+        "defaultPortType": "ethernet",
+        "firmwareVersion": null,
+        "protocolVersion": "2.0",
+        "hardwareVersion": null,
+        "supportsMulticastFilter": true,
+        "isRingCapable": false,
+        "cycleSetting": "LOW",
+        "cyclicDataBytes": 400
+      },
+      "position": {
+        "x": 1673.8638990572585,
+        "y": 724.195151580894
+      },
+      "type": "deviceClass",
+      "width": 129,
+      "height": 72,
+      "selected": false,
+      "positionAbsolute": {
+        "x": 1673.8638990572585,
+        "y": 724.195151580894
+      },
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "AWDxf2sd",
+      "source": "LfyvSj",
+      "target": "g7x8oL",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port1_in",
+      "type": "default"
+    },
+    {
+      "id": "MOjEkWI7",
+      "source": "g7x8oL",
+      "target": "I4V5e7",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port1_in",
+      "type": "default"
+    },
+    {
+      "id": "sEbFbz9f",
+      "source": "I4V5e7",
+      "target": "n9gPGF",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port1_in",
+      "type": "default"
+    },
+    {
+      "id": "Vi00ovil",
+      "source": "n9gPGF",
+      "target": "Ygy5rG",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "Zpk4D4Db",
+      "source": "geo-MJ",
+      "target": "Ygy5rG",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port2_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "tyqQVRPm",
+      "source": "gVw2-a",
+      "target": "Ygy5rG",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port3_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "SSulnUII",
+      "source": "Ygy5rG",
+      "target": "CTNniI",
+      "sourceHandle": "port4_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "AouL4Yst",
+      "source": "hEIcCU",
+      "target": "LfyvSj",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port2_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "Sy3114sM",
+      "source": "9RRJUY",
+      "target": "hEIcCU",
+      "sourceHandle": "port1_out",
+      "targetHandle": "port2_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "-CAT1zUo",
+      "source": "9RRJUY",
+      "target": "HqSwIz",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "XA0poyyh",
+      "source": "HqSwIz",
+      "target": "Q8DMJO",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    },
+    {
+      "id": "qADr660F",
+      "source": "Q8DMJO",
+      "target": "Vg69JH",
+      "sourceHandle": "port2_out",
+      "targetHandle": "port1_in",
+      "style": {
+        "strokeWidth": 2,
+        "stroke": "#555"
+      }
+    }
+  ],
+  "communicationMode": "unicast",
+  "version": 1,
+  "updatedAt": "2026-03-13T01:14:39.966Z"
+}

@@ -1,0 +1,21 @@
+node_modules/
+# dist は CI で生成するため除外
+dist/
+.vite/
+.tmp/
+tmp_inspect/
+public/data/connection-tables/
+
+# Playwright outputs
+playwright-report/
+test-results/
+tests/results/
+
+.DS_Store
+*.log
+vite.config.timestamp-*.
+
+# CSP raw assets (ZIP/BMP) - do not commit
+tools/csp_raw/
+tools/csp_raw/**/*
+

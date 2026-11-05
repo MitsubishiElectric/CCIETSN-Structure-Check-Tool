@@ -1,0 +1,1985 @@
+{
+  "version": 1,
+  "generatedAt": "2026-02-25T00:00:00Z",
+  "masterDevice": "MXR300-64",
+  "classification": "B_ONLY",
+  "topologyRestrictions": [
+    {
+      "topology": "RING",
+      "description": "MX-Rモデルはリング構成に対応していません",
+      "minFirmwareVersion": 2
+    }
+  ],
+  "tables": {
+    "1G": {
+      "unicast": {
+        "units-only": {
+          "masterSpeed": "1G",
+          "mode": "unicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "local-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "local-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "local-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "local-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "local-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "master-B-100M",
+              "to": "local-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-1G",
+              "status": "DENY",
+              "switches": [],
+              "footnotes": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-1G",
+              "status": "DENY",
+              "switches": [],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "multicast": {
+        "units-only": {
+          "masterSpeed": "1G",
+          "mode": "multicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-1G",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "1G-ba": {
+      "unicast": {
+        "units-only": {
+          "masterSpeed": "1G",
+          "mode": "unicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-A-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-A-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-A-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-A-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "remote-A-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-A-100M",
+              "to": "remote-A-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "local-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "local-B-1G",
+              "to": "local-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "local-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "remote-A-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "remote-A-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "remote-A-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            }
+          ]
+        }
+      },
+      "multicast": {
+        "units-only": {
+          "masterSpeed": "1G",
+          "mode": "multicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-A-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "remote-A-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-1G",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "ethernet-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "remote-A-1G",
+              "to": "remote-A-100M",
+              "status": "ALLOW_VIA_SWITCH_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-A-100M",
+              "to": "remote-A-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"低速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": "LOW"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "100M": {
+      "unicast": {
+        "units-only": {
+          "masterSpeed": "100M",
+          "mode": "unicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-100M",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "master-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "local-B-100M",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "master-B-1G",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-1G",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "local-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-1G",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "local-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "master-B-100M",
+              "to": "local-B-1G",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "master-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "local-B-100M",
+              "to": "ethernet-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            }
+          ]
+        }
+      },
+      "multicast": {
+        "units-only": {
+          "masterSpeed": "100M",
+          "mode": "multicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-100M",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "master-B-100M",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "ethernet-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            },
+            {
+              "from": "master-B-100M",
+              "to": "ethernet-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはマルチキャストモードに対応していません"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "100M-ba": {
+      "unicast": {
+        "units-only": {
+          "masterSpeed": "100M",
+          "mode": "unicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-100M",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "master-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "local-B-100M",
+              "to": "remote-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "local-B-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ],
+              "footnotes": []
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "master-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "local-B-100M",
+              "to": "remote-A-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "ethernet-100M",
+              "status": "DENY",
+              "switches": [],
+              "conditions": [
+                {
+                  "type": "notSupported",
+                  "description": "MX-Rモデルはローカル局を接続できません"
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            },
+            {
+              "from": "remote-A-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ],
+              "footnotes": [],
+              "conditions": []
+            }
+          ]
+        }
+      },
+      "multicast": {
+        "units-only": {
+          "masterSpeed": "100M",
+          "mode": "multicast",
+          "deviceType": "units-only",
+          "rows": [
+            {
+              "from": "master-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "master-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsLocal",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S"
+              ],
+              "conditions": [
+                {
+                  "type": "cycleSetting",
+                  "description": "通信速度100Mbpsのデバイス局に対して、\"通信周期設定\"を\"基本周期\"または\"中速\"に設定してください。",
+                  "check": {
+                    "targetDevices": "100MbpsRemote",
+                    "parameter": "cycleSetting",
+                    "requiredValue": [
+                      "BASIC",
+                      "MID"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "local-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "ethernet-100M",
+              "to": "remote-B-100M",
+              "status": "ALLOW",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "remote-A-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "remote-A-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H"
+              ]
+            },
+            {
+              "from": "local-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            },
+            {
+              "from": "remote-B-100M",
+              "to": "ethernet-100M",
+              "status": "ALLOW_PENDING",
+              "switches": [
+                "S",
+                "H",
+                "N"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
